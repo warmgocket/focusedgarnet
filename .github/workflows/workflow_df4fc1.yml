@@ -1,0 +1,12 @@
+name: Test Suite
+on:
+  push:
+  workflow_dispatch:
+
+jobs:
+  deploy-stage:
+    runs-on: ubuntu-22.04
+    steps:
+      - uses: actions/checkout@v4
+      - name: Checkout code
+        run: echo "setup complete"
